@@ -1,0 +1,11 @@
+package Spring_01_beans;
+
+public class debitCardPayment implements IPayment {
+
+	@Override
+	public boolean pay(double amt) {
+		System.out.println("debitCardPayment......processing");
+		return true;
+	}
+
+}

@@ -1,0 +1,13 @@
+package tcs.Security;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Security {
+	public Security() {
+		System.out.println();
+		System.out.println("tcs Security::constructor");
+		System.out.println();
+	}
+
+}

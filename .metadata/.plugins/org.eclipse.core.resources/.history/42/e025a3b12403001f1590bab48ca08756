@@ -1,0 +1,28 @@
+package Spring_01_beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class paymentProcess {
+	private IPayment payment;
+	
+	public paymentProcess() {
+		System.out.println("paymentProcess::constructor");
+	}
+	@Autowired
+	public paymentProcess(IPayment payment) {
+		this.payment=payment;
+		System.out.println("constructor injection perform");
+	}
+	
+	public void processPayment(double amt)
+	{
+		boolean b1=payment.pay(amt);
+		if (b1) {
+			System.out.println("payment sucessful");
+		}else
+			System.out.println("payment deline...");
+	}
+
+}

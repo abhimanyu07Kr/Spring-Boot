@@ -1,0 +1,12 @@
+package Spring_01_beans;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class restController {
+	@GetMapping
+	public String getMsg()
+	{
+		return " welcome to Spring boot";
+	}
+	}

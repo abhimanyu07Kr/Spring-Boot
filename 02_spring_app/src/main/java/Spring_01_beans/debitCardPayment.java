@@ -1,0 +1,17 @@
+package Spring_01_beans;
+
+import org.springframework.stereotype.Component;
+
+@Component("dcp")
+public class debitCardPayment implements IPayment {
+//	public debitCardPayment() {
+//		System.out.println("debitCardPayment::constructor");
+//	}
+
+	@Override
+	public boolean pay(double amt) {
+		System.out.println("debitCardPayment......processing");
+		return true;
+	}
+
+}
