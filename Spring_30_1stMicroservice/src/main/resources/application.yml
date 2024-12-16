@@ -1,0 +1,24 @@
+server:
+  port: 1111
+spring:
+  application:
+    name: Welcome-Api
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080/applications
+  cloud:
+    compatibility-verifier:
+      enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: '*'
+     
+
+
+
+
+      
+
