@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Spring_28_EurekaServer
+  cloud:
+    compatibility-verifier:
+      enabled: false
+server:
+  port: 8761
