@@ -1,0 +1,6 @@
+in\abhi\entity\Ticket.class
+in\abhi\Service\Passanger.class
+in\abhi\Service\TicketService.class
+in\abhi\rest\TicketController.class
+in\abhi\Service\TicketServiceImpl.class
+in\abhi\Spring23AwsApplication.class
