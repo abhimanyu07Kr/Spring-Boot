@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+<form th:object="${emp}" th:action="@{/form}" method="post">
+        <div>
+			<table>
+			            <tr>
+			                <td>
+			                    <input type="text" placeholder="id" th:field="*{empId}">
+			                </td>
+			            </tr>
+			            <tr>
+			                <td><input type="text" placeholder="name" th:field="*{empName}"></td>
+			            </tr>
+			            <tr>
+			                <td><input type="text" placeholder="branch" th:field="*{empDept}"></td>
+			            </tr>
+			            <tr>
+			                <td><input type="text" placeholder="age" th:field="*{empAge}"></td>
+			            </tr>
+						<tr>
+											
+							<td><input type="submit" value="Submit"  /> </td>
+						</tr>
+			            
+			        </table>
+		</div>
+       
+    </formth>
+</body>
+</html>

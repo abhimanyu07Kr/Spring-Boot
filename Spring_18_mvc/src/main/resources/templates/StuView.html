@@ -1,0 +1,48 @@
+<!doctype html>
+<html >
+  <head>
+   
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+	<script type="text/javascript">
+		function confirmDelete()
+		{
+			return confirm("are you want to delete");
+		}
+	</script>
+    
+  </head>
+  <body>
+	<a href="Form">insert Details</a>
+	<h1 th:text="${greet}"></h1>
+		<table class="table table-bordered table-striped ">
+			<tr>
+				<th>stu_Id</th>
+				<th>stu_name</th>
+				<th>stu_age</th>
+			</tr>
+			<tr th:each="s:${stu}">
+				<td th:text="${s.stuId}"></td>
+			<td th:text="${s.stuName}"></td>
+			<td th:text="${s.stuAge}"></td>
+			
+			<td><a th:href="@{/edit?(stuId=${s.stuId})}" class="btn btn-secondary">edit</a>
+				<a th:href="@{/delete?(stuId=${s.stuId})}" class="btn btn-danger" onclick="return confirmDelete()">delete</a>
+			</td>
+			
+			<tr th:if="${stu.isEmpty()}">
+				<td colspan="3"><center><bold>Record not found</bold></center> </td>
+			</tr>
+			
+			
+			</tr>
+			
+			
+    
+	
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>

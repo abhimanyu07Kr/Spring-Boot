@@ -1,0 +1,32 @@
+<html lang="en"></html>
+	<head>
+		<title>form</title>
+	</head>
+	<body>
+		<h1 th:text="${set}"></h1>
+		<h1 th:text="${greet}"></h1>
+		
+		<form th:action="@{/Form}" th:object="${stu}" method="post">
+			<fieldset>
+				<legend>form</legend>
+				<table>
+                    <tr>
+                        <td><input type="text" placeholder="name" th:field="*{stuName}"></td>
+						<input type="hidden" th:field="*{stuId}"/>
+                    </tr>
+					<tr>
+						<td><input type="number" placeholder="age" th:field="*{stuAge}"></td>
+					</tr>
+					<tr>
+						<tr>
+							<td><input type="submit" value="submit"></td>
+						</tr>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+		<h1 th:text="${succMsg}"></h1>
+				<h1 th:text="${errMsg}"></h1>
+		<a href="find">view details</a>
+	</body>
+</html>
