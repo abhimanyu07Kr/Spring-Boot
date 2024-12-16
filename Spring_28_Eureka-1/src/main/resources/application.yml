@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Spring_28_Eureka-1
+
+server:
+  port: 8761
