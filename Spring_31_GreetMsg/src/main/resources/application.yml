@@ -1,0 +1,17 @@
+server:
+  port: 2222
+spring:
+  application:
+    name: GreetMsg
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+  cloud:
+    compatibility-verifier:
+      enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
