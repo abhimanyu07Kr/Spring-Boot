@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: Spring_20_mvc
+  datasource:
+    username: root
+    password: tiger
+    url: jdbc:mysql://localhost:3306/spring01
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update

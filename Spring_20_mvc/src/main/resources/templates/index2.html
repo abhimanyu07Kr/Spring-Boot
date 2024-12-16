@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>index2</title>
+	</head>
+	<body>
+		<p>hello this is index 2</p>
+		
+		
+		<form th:action="@{/form}" method="post" th:object="${phone}">
+			<fieldset>
+				<legend>form</legend>
+				<tr>
+					<td>
+						<input type="text" placeholder="Phone Name" th:field="*{phoneName}"/><br>
+					</td>
+					<td>
+						<input type="text" placeholder="Phone Ram" th:field="*{phoneRam}"/><br>
+					</td>
+					<td>
+						<input type="text" placeholder="Phone Rom" th:field="*{phoneRom}"/><br>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="submit"</td>
+				</tr>
+			</fieldset>
+		</form>
+		
+		<a href="find2">show data</a>
+	</body>
+</html>
