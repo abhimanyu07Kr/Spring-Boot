@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Spring_39_OAuth_Security
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+           clientId: Ov23livVlRqsfZ038rQL
+           clientSecret: f2a9dee79a600123522086127750129a1b8ae44f
